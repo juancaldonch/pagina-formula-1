@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fórmula 1</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #111;
+      color: white;
+      padding: 40px;
+    }
+
+    .contenedor{
+      max-width: 1100px;
+      margin: auto;
+      background: #1b1b1b;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    }
+
+    .banner{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-bottom: 4px solid red;
+    }
+    .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .contenido{
+      padding: 40px;
+    }
+
+    h1{
+      font-size: 42px;
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    p{
+      line-height: 1.8;
+      font-size: 18px;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+    .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    }
+
+    .imagen{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.3s;  
+    }
+
+    .imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    }
+
+    .imagen:hover{
+      transform: scale(1.03);
+      border-color: red;
+    }
+
+    .info{
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card{
+      flex: 1;
+      min-width: 250px;
+      background: #242424;
+      padding: 25px;
+      border-radius: 15px;
+      border-left: 5px solid red;
+    }
+
+    .card h2{
+      margin-bottom: 15px;
+      color: red;
+    }
+
+    .card p{
+      margin: 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="contenedor">
+
+    <!-- ESPACIO PARA IMAGEN PRINCIPAL -->
+    <div class="banner">
+        <img src="img/formula1.jpg" alt="">
+    </div>
+
+    <div class="contenido">
+
+      <h1>Carro de Fórmula 1</h1>
+
+      <p>
+        Los carros de Fórmula 1 son vehículos diseñados para alcanzar velocidades extremas
+        y ofrecer el máximo rendimiento en las pistas de carreras. Están fabricados con
+        materiales ultraligeros como fibra de carbono y cuentan con motores híbridos de
+        alta potencia capaces de superar los 300 km/h.
+      </p>
+
+      <p>
+        La aerodinámica es uno de los aspectos más importantes de estos vehículos,
+        permitiendo un mejor agarre y estabilidad en curvas a alta velocidad.
+        Además, cada equipo desarrolla tecnologías avanzadas para mejorar el rendimiento
+        durante la competencia.
+
+      </p>
+
+      <!-- GALERÍA -->
+      <div class="galeria">
+
+        <div class="imagen">
+            <img src="img/formula2.jpg" alt="">
+          Imagen 1
+        </div>
+
+        <div class="imagen">
+            <img src="img/formula3.jpg" alt="">
+          Imagen 2
+        </div>
+
+        <div class="imagen">
+            <img src="img/formula4.jpg" alt="">
+          Imagen 3
+        </div>
+
+      </div>
+
+      <!-- TARJETAS -->
+      <div class="info">
+
+        <div class="card">
+          <h2>Velocidad</h2>
+          <p>
+            Un Fórmula 1 puede superar los 350 km/h en circuitos de alta velocidad.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Motor</h2>
+          <p>
+            Utilizan motores híbridos V6 turbo con tecnología avanzada.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Aerodinámica</h2>
+          <p>
+            Sus alerones y diseño ayudan a mantener estabilidad y control.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
